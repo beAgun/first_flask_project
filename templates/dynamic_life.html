@@ -1,0 +1,11 @@
+{% extends 'life.html' %}
+
+{% block app_content %}
+    {{ super() }}
+    <a class="btn btn-info refresh" href="{{ url_for('life') }}">Stop</a>
+{% endblock %}
+
+{% block scripts %}
+     {{ super() }}
+    <script>setInterval(() => window.location.reload(), 800);</script>
+{% endblock %}

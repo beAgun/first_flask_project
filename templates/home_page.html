@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{# {% block title %} {{ title }} {% endblock %} #}
+
+{% block app_content %}
+
+    <form action="/index" method="post" class="form"> {# http://127.0.0.1:5000/life #}
+        <p class="text text-title">Welcome to game 'life'</p>
+        <table>
+            <p class="text">Enter the width and height of the world</p>
+            <p>
+                <label for="width">Width:</label>
+                <input type="number" name="width" value=40>
+            </p>
+            <p>
+                <label for="height">Height:</label>
+                <input type="number" name="height" value=15>
+            </p>
+            <p align="center">
+                <input type="submit" value="Submit">
+            </p>
+        </table>
+    </form>
+
+{% endblock %}

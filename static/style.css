@@ -1,11 +1,44 @@
+.form {
+    background: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 20px;
+}
+
+.text {
+    font-family: "Book Antiqua", "Arial";
+    font-size: 25px;
+    text-align: center
+}
+
+.text-title {
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    border: 20px;
+    padding: 10px;
+}
+
+label {
+    font-family: "Book Antiqua", "Arial";
+    font-size: 20px;
+    text-align: center
+}
+
 .world {
     border: 1px solid black;
     border-collapse: collapse;
+
 }
 
 td {
     border: 1px solid black1;
     border-radius: 15px;
+    text-align: center;
 }
 
 .cell {
@@ -61,7 +94,7 @@ a, table {
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.42857143;
     text-align: center;
